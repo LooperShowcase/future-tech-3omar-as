@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>omar's website</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>my voice assistant</h1>
+    <button onclick="speak();">init audio</button>
+    <div class="container">
+
+      <form
+      onsubmit="
+      event.preventDefault();
+      conversationUserAdd(document.getElementById('input-text').value);
+      openai_test();
+      ">
+      
+        <input type="text" id="input-text" />
+        <button id="submit-button">Submit</button>
+      </form>
+      
+      <div id="chat-container"></div>
+    </div>
+    <br>
+    <br>
+    <center>
+    <img width="50%" src="https://www.mlyearning.org/wp-content/uploads/2023/04/Who-Owns-Chat-Gpt.jpg" alt="">
+  </center>
+  <script src="script.js"></script>
+</html>
